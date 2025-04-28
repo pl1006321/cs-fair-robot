@@ -43,7 +43,7 @@ class GUI:
         robogo_label = Label(text='robogo!', fg="#FFFFFF", bg="#927a7d", font=('Poppins', 35, "bold"))
         robogo_label.place(x=15, y=45)
 
-        kawaii = Image.open("kawaii.png")
+        kawaii = Image.open("ComputerFiles/images/kawaii.png")
         kawaii = kawaii.resize((190, 120))
         self.kawaii = ImageTk.PhotoImage(kawaii)
 
@@ -163,7 +163,7 @@ class GUI:
         # video_thread.daemon = True 
         # video_thread.start()
 
-        up_arrow = Image.open('arrow.png').resize((50, 50))
+        up_arrow = Image.open('ComputerFiles/images/arrow.png').resize((50, 50))
         self.up_arrow = ImageTk.PhotoImage(up_arrow)
 
         forward = Button(buttons_panel, image=self.up_arrow, font=custom_font,)
@@ -179,13 +179,13 @@ class GUI:
         left.bind('<ButtonPress-1>', lambda event: self.post_direction('left'))
         left.bind('<ButtonRelease-1>', lambda event: self.post_direction('stop'))
 
-        play_img = Image.open('play.png').resize((70, 50))
+        play_img = Image.open('ComputerFiles/images/play.png').resize((70, 50))
         self.play_img = ImageTk.PhotoImage(play_img)
 
         play = Button(buttons_panel, image=self.play_img, font=custom_font, padx=5, pady=7, command = self.play_button)
         play.grid(row=2, column=4, padx=2.5, pady=5, ipadx=5, ipady=5, sticky='we')
 
-        stop_img = Image.open('stop_btn.png').resize((50, 50))
+        stop_img = Image.open('ComputerFiles/images/stop_btn.png').resize((50, 50))
         self.stop_img = ImageTk.PhotoImage(stop_img)
 
         stop = Button(buttons_panel, image=self.stop_img, font=custom_font, padx=5, pady=7, command = lambda: self.post_direction('stop'))
