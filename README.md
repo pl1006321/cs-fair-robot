@@ -21,10 +21,13 @@ make sure you run this in order!
 
 on raspberry pi:
 
-` cd ComputerFiles && python3 main.py `
+` cd RaspPiFiles && python3 main.py `
 
-<ins>wait a few seconds to ensure api is up & running, as well as that video frames are being posted to api<ins>
+then:
+- wait a few seconds to ensure api is up & running
+- check if the api url matches the ones defined at the beginning of Automation.py and GUI.py
+- check console log to see if video frames are successfully being posted to API 
 
 then, on pc:
 
-` cd RaspPiFiless && python3 main.py `
+` cd ComputerFiles && python3 main.py `
