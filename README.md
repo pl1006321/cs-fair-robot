@@ -23,7 +23,7 @@ on raspberry pi:
 
 ` cd ComputerFiles && python3 main.py `
 
-<u>wait a few seconds to ensure api is up & running, as well as that video streams are being posted to api<u>
+<u>wait a few seconds to ensure api is up & running, as well as that video frames are being posted to api<u>
 
 then, on pc:
 
